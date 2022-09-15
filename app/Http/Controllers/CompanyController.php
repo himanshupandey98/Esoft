@@ -39,7 +39,7 @@ class CompanyController extends Controller
         $attributes=request()->validate([
             'company_name'=>'required',
             'email'=>'required',
-            'logo'=>'image',
+            'logo'=>'image|dimensions:max_width=100,max_height=100',
             'website'=>'required',
 
         ]);
@@ -85,7 +85,7 @@ class CompanyController extends Controller
         $attributes=request()->validate([
             'company_name'=>'required',
             'email'=>'required',
-            'logo'=>'image',
+            'logo'=>'image|dimensions:max_width=100,max_height=100',
             'website'=>'required',
 
         ]);

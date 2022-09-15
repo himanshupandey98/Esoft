@@ -120,6 +120,6 @@ class EmployeeController extends Controller
     {
         Employee::where('id',$id)->delete();
 
-        return redirect('/employee');
+        return "Data Deleted";
     }
 }

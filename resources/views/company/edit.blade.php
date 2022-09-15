@@ -23,7 +23,9 @@
     <input type="email" name="email" class="form-control"  
     value="{{$company->email}}">
 
-    <label for="logo">Logo</label>
+    <label for="logo">Logo<br>
+    <span class="h6 pt-1">Image dimension should be 100*100</span>
+    </label>
     <input type="file" name="logo" class="form-control"  
     value="{{$company->logo}}">
 

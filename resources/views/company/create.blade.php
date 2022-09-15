@@ -8,6 +8,7 @@
     </div>
             @if ($errors->any())
                   @foreach($errors->all() as $error)
+                  
                     <li class="text-danger h6">{{$error}}</li>
                   @endforeach
             @endif
@@ -22,8 +23,10 @@
     value="{{old('email')}}">
 
     
-    <label for="logo">Logo</label>
-   <input type="file" name="logo" id="logo" class="form-control"  >
+    <label for="logo">Logo<br>
+      <span class="h6 pt-1">Image dimension should be 100*100</span>
+    </label>
+   <input type="file" name="logo" id="logo" class="form-control">
 
     <label for="website">Website</label>
     <input type="url" name="website" class="form-control"  
